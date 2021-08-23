@@ -145,6 +145,58 @@ Die Methode shift() entfernt das erste Element eines Arrays.
 
 ---
 
+**Lev1_10_js-vertiefung_arrays_splice()-delete - Aufgabenstellung**
+
+Elemente entfernen mit splice()
+Um Elemente zu entfernen, müssen wir den Index-Parameter und die Anzahl der zu entfernenden Elemente angeben.
+
+        Syntax: array.splice(index, Anzahl der Elemente);
+
+-   Verwende den Code aus dem Kommentarbereich.
+-   Entferne die Fotos mit der Nummer 004-007.
+-   Deklariere die gelöschten Bilder als delImg1
+-   Gib delImg1 und array in der Konsole aus.
+-   Entferne die Fotos mit der Nummer 010-014.
+-   Deklariere die gelöschten Bilder als delImg2
+-   Gib delImg2 und array in der Konsole aus.
+
+        Syntax: array.splice(index);// Jedes Element, das ab Index 2 beginnt, wird entfernt.
+
+-   Entferne alle Fotos außer den ersten beiden.
+-   Deklariere die gelöschten Bilder als delImg3.
+-   Gib delImg3 und array in der Konsole aus.
+
+---
+
+**Lev1_11_js-vertiefung_arrays_splice() - Aufgabenstellung**
+
+<i>Elemente hinzufügen mit <b>splice()</b></i>
+Um Elemente hinzuzufügen, müssen wir sie als dritten, vierten, fünften Parameter
+(abhängig davon, wie viele hinzugefügt werden sollen) zur <b>splice()</b> Methode angeben:
+
+        Syntax: array.splice(index, Anzahl der Elemente, Element, Element);
+
+-   Verwende den Code aus dem Kommentarbereich.
+-   Füge Fotos mit der Nummer 008-010 hinzu.
+-   Gib array in der Konsole aus.
+-   Fügen Fotos mit der Nummer 014-019 hinzu.
+-   Gib array in der Konsole aus.
+-   Füge den Rest(000-019) der Fotos hinzu, so dass sie numerisch angezeigt werden.
+-   Gib array in der Konsole aus.
+
+---
+
+**Lev1_12_js-vertiefung_arrays_slice() - Aufgabenstellung**
+
+-   Verwende den Code aus dem Kommentarbereich.
+-   Verwende den Befehl slice(), um die Daten zu kopieren.
+-   Kopiere die Bilder 007-014 und deklariere sie als Variable copyImg1.
+-   Gib copyImg1 und array in der Konsole aus.
+-   Kopiere die Bilder 006-011 und deklariere sie als Variable copyImg2.
+-   Gib copyImg2 in der Konsole aus.
+
+---
+
 _Source:_ https://github.com/Ninni-cfm/day46_JS-Vertiefung-Array_Methods_1
 
 _Demo:_ https://ninni-cfm.github.io/day46_JS-Vertiefung-Array_Methods_1/

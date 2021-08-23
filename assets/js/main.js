@@ -263,3 +263,114 @@ dummy.shift();
 dummy.shift();
 displayArray("dummy");
 displayText();
+
+
+//***********************************************************************************************************************************
+displayText("Lev1_10_js-vertiefung_arrays_splice()-delete", 'h2');
+// Elemente entfernen mit splice()
+let array = [
+    "imageTeilnehmer000supercode.jpg",
+    "imageTeilnehmer001supercode.jpg",
+    "imageTeilnehmer002supercode.jpg",
+    "imageTeilnehmer003supercode.jpg",
+    "imageTeilnehmer004supercode.jpg",
+    "imageTeilnehmer005supercode.jpg",
+    "imageTeilnehmer006supercode.jpg",
+    "imageTeilnehmer007supercode.jpg",
+    "imageTeilnehmer008supercode.jpg",
+    "imageTeilnehmer009supercode.jpg",
+    "imageTeilnehmer010supercode.jpg",
+    "imageTeilnehmer011supercode.jpg",
+    "imageTeilnehmer012supercode.jpg",
+    "imageTeilnehmer013supercode.jpg",
+    "imageTeilnehmer014supercode.jpg",
+    "imageTeilnehmer015supercode.jpg",
+    "imageTeilnehmer016supercode.jpg",
+    "imageTeilnehmer017supercode.jpg",
+    "imageTeilnehmer018supercode.jpg",
+    "imageTeilnehmer019supercode.jpg"
+];
+// Um Elemente zu entfernen, müssen wir den Index-Parameter und die Anzahl der zu entfernenden Elemente angeben.
+// Syntax: array.splice(index, Anzahl der Elemente);
+// Entferne die Fotos mit der Nummer 004 - 007.
+// Deklariere die gelöschten Bilder als delImg1
+let delImg1 = array.splice(4, 4);
+// Gib delImg1 und array in der Konsole aus.
+displayArray("delImg1");
+displayArray("array");
+
+// Entferne die Fotos mit der Nummer 010 - 014.
+// Deklariere die gelöschten Bilder als delImg2
+let delImg2 = array.splice(6, 5);
+// Gib delImg2 und array in der Konsole aus.
+displayArray("delImg2");
+displayArray("array");
+
+// Syntax: array.splice(index); // Jedes Element, das ab Index 2 beginnt, wird entfernt.
+// Entferne alle Fotos außer den ersten beiden.
+// Deklariere die gelöschten Bilder als delImg3.
+let delImg3 = array.splice(2);
+// Gib delImg3 und array in der Konsole aus.
+displayArray("delImg3");
+displayArray("array");
+displayText();
+
+
+//***********************************************************************************************************************************
+displayText("Lev1_11_js-vertiefung_arrays_splice()", 'h2');
+// Elemente hinzufügen mit splice()
+// Um Elemente hinzuzufügen, müssen wir sie als dritten, vierten, fünften Parameter(abhängig davon, wie viele hinzugefügt werden sollen) zur splice() Methode angeben:
+// Syntax: array.splice(index, Anzahl der Elemente, Element, Element);
+// Verwende den Code aus dem Kommentarbereich.
+array = ["imageTeilnehmer000supercode.jpg", "imageTeilnehmer001supercode.jpg"];
+
+// Füge Fotos mit der Nummer 008 - 010 hinzu.
+array.splice(array.length, 0,
+    "imageTeilnehmer008supercode.jpg",
+    "imageTeilnehmer009supercode.jpg",
+    "imageTeilnehmer010supercode.jpg");
+// Gib array in der Konsole aus.
+displayArray("array");
+
+// Fügen Fotos mit der Nummer 014 - 019 hinzu.
+array.splice(array.length, 0,
+    "imageTeilnehmer014supercode.jpg",
+    "imageTeilnehmer015supercode.jpg",
+    "imageTeilnehmer016supercode.jpg",
+    "imageTeilnehmer017supercode.jpg",
+    "imageTeilnehmer018supercode.jpg",
+    "imageTeilnehmer019supercode.jpg");
+// Gib array in der Konsole aus.
+displayArray("array");
+
+// Füge den Rest(000 - 019) der Fotos hinzu, so dass sie numerisch angezeigt werden.
+array.splice(2, 0,
+    "imageTeilnehmer002supercode.jpg",
+    "imageTeilnehmer003supercode.jpg",
+    "imageTeilnehmer004supercode.jpg",
+    "imageTeilnehmer005supercode.jpg",
+    "imageTeilnehmer006supercode.jpg",
+    "imageTeilnehmer007supercode.jpg");
+array.splice(11, 0,
+    "imageTeilnehmer011supercode.jpg",
+    "imageTeilnehmer012supercode.jpg",
+    "imageTeilnehmer013supercode.jpg");
+// Gib array in der Konsole aus.
+displayArray("array");
+displayText();
+
+
+//***********************************************************************************************************************************
+displayText("Lev1_12_js-vertiefung_arrays_slice()", 'h2');
+// Verwende den Befehl slice(), um die Daten zu kopieren.
+// Kopiere die Bilder 007 - 014 und deklariere sie als Variable copyImg1.
+let copyImg1 = array.slice(7, 15);
+// Gib copyImg1 und array in der Konsole aus.
+displayArray("array");
+displayArray("copyImg1");
+
+// Kopiere die Bilder 006 - 011 und deklariere sie als Variable copyImg2.
+let copyImg2 = array.slice(6, 12);
+// Gib copyImg2 in der Konsole aus.
+displayArray("copyImg2");
+displayText();
