@@ -123,6 +123,28 @@ Die pop()-Methode entfernt das letzte Element eines Arrays.
 
 ---
 
+**Lev1_8_js-vertiefung_arrays_shift() - Aufgabenstellung**
+
+Die Methode shift() entfernt das erste Element eines Arrays.
+
+-   Verwende das deutscheGerichte-Array aus der vorherigen Übung.
+-   Entferne aus dem Array 3 Werte mit Hilfe der Methode shift();
+-   Speichere diese als Array nichtGut.
+-   Gib diese Variable in der Konsole aus.
+
+---
+
+**Lev1_9_js-vertiefung_arrays_push-pop-shift-unshift-difference - Aufgabenstellung**
+
+-   Erstelle ein Array und ordne es einer Variablen zu.
+-   Array mit Werte: 23, 54, 75;
+-   Verwende die Push-Methode, um 5 Werte in dein Array einzufügen.
+-   Verwende die Unshift-Methode, um 5 Werte an der Vorderseite deines Arrays hinzuzufügen.
+-   Verwende die Pop-Methode, um 2 Werte von der Rückseite deines Arrays zu entfernen.
+-   Verwende die Shift-Methode, um 2 Werte von der Vorderseite deines Arrays zu entfernen.
+
+---
+
 _Source:_ https://github.com/Ninni-cfm/day46_JS-Vertiefung-Array_Methods_1
 
 _Demo:_ https://ninni-cfm.github.io/day46_JS-Vertiefung-Array_Methods_1/

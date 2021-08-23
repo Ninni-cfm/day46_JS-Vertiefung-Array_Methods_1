@@ -4,9 +4,10 @@
 // Greeting from StackOverflow :-)
 const varToString = varObj => Object.keys(varObj)[0];
 
-function displayText(param = "<br>", elementType = 'p') {
+function displayText(param = "", elementType = 'p') {
     console.log(param);
-    document.body.innerHTML += `<${elementType}>${param}</${elementType}>`;
+
+    document.body.innerHTML += `<${elementType}>${param.length == 0 ? "<br>" : param}</${elementType}>`;
 }
 function displayVariable(param, elementType = 'p') {
     displayText(param.concat(": ", eval(param)), elementType);
@@ -20,6 +21,7 @@ function displayArray(param) {
     let str = `${param}: (${arr.length}) [`;
     for (i = 0; i < arr.length; i++) {
         if (typeof (arr[i]) == "string") {
+            str += `'${arr[i]}'`;
         } else if (typeof (arr[i]) == "object") {
             str += `[${arr[i]}]`;
         } else {
@@ -183,3 +185,81 @@ heroUndEnemy.push(["Wolverine", "SabreTooth"]);
 heroUndEnemy.push(["GhostRider", "Mephisto"]);
 // Gebe heroUndEnemy in der Konsole aus.
 displayArray("heroUndEnemy");
+displayText();
+
+//***********************************************************************************************************************************
+displayText("Lev1_6_js-vertiefung_arrays_pop()", 'h2');
+// Die pop()-Methode entfernt das letzte Element eines Arrays.
+// Verwende den Code aus den vorherigen Übungen.
+// Entfernt zuletzt hinzugefügte Song aus dem Array totalSongs.
+// Speichere diesen als Variable entfernterSong.
+let entfernterSong = totalSongs.pop();
+// Gib entfernterSong und totalSongs in der Konsole aus.
+displayVariable("entfernterSong");
+displayArray("totalSongs");
+
+// Entferne den zuletzt hinzugefügten Torhüter aus dem Array bestenFussballerAllerZeiten.
+// Speichere ihn als Variable entfernterFussballer.
+// Gib entfernterFussballer und bestenFussballerAllerZeiten in der Konsole aus.
+let entfernterFussballer = besteFussballerAllerZeiten.pop();
+displayVariable("entfernterFussballer");
+displayArray("besteFussballerAllerZeiten");
+
+// Entferne dann 3 Fussballer.
+// Gib die Variable bestenFussballerAllerZeiten in der Konsole aus.
+besteFussballerAllerZeiten.pop();
+besteFussballerAllerZeiten.pop();
+besteFussballerAllerZeiten.pop();
+displayArray("besteFussballerAllerZeiten");
+displayText();
+
+
+//***********************************************************************************************************************************
+displayText("Lev1_7_js-vertiefung_arrays_unshift()", 'h2');
+// Die Methode unshift() fügt neue Elemente zum Anfang eines Arrays hinzu.
+// Definiere deutscheGerichte(die du kennen solltest) mit einem Array, das enthält:
+// Speckkuchen, Thüringer Rostbratwurst, Quarkkeulchen, Sauerbraten.
+let deutscheGerichte = ["Speckkuchen", "Thüringer Rostbratwurst", "Quarkkeulchen", "Sauerbraten"];
+// Füge zum Array 5 deutsche Gerichte mit dem Befehl unshift() hinzu.
+deutscheGerichte.unshift("Schweinshaxe", "Schnitzel", "Bauern-Pfannenkuchen", "Bauern-Topf", "Manta-Teller");
+// Gib es in der Konsole aus.
+displayArray("deutscheGerichte");
+displayText();
+
+
+//***********************************************************************************************************************************
+displayText("Lev1_8_js-vertiefung_arrays_shift()", 'h2');
+// Die Methode shift() entfernt das erste Element eines Arrays.
+// Verwende das deutscheGerichte - Array aus der vorherigen Übung.
+// Entferne aus dem Array 3 Werte mit Hilfe der Methode shift();
+// Speichere diese als Array nichtGut.
+// Gib diese Variable in der Konsole aus.
+let nichtGut = [];
+nichtGut.push(deutscheGerichte.shift());
+nichtGut.push(deutscheGerichte.shift());
+nichtGut.push(deutscheGerichte.shift());
+displayArray("nichtGut");
+displayText();
+
+
+//***********************************************************************************************************************************
+displayText("Lev1_9_js-vertiefung_arrays_push-pop-shift-unshift-difference", 'h2');
+// Erstelle ein Array und ordne es einer Variablen zu.
+// Array mit Werte: 23, 54, 75;
+let dummy = [23, 54, 75];
+displayArray("dummy");
+// Verwende die Push-Methode, um 5 Werte in dein Array einzufügen.
+dummy.push(4, 24, 68, 53, 22);
+displayArray("dummy");
+// Verwende die Unshift-Methode, um 5 Werte an der Vorderseite deines Arrays hinzuzufügen.
+dummy.unshift(6, 5, 64, 57, 9);
+displayArray("dummy");
+// Verwende die Pop-Methode, um 2 Werte von der Rückseite deines Arrays zu entfernen.
+dummy.pop();
+dummy.pop();
+displayArray("dummy");
+// Verwende die Shift-Methode, um 2 Werte von der Vorderseite deines Arrays zu entfernen.
+dummy.shift();
+dummy.shift();
+displayArray("dummy");
+displayText();
