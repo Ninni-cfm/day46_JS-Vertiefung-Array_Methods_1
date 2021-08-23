@@ -374,3 +374,4 @@ let copyImg2 = array.slice(6, 12);
 // Gib copyImg2 in der Konsole aus.
 displayArray("copyImg2");
 displayText();
+
